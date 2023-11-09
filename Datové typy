@@ -1,0 +1,65 @@
+package com.home;
+        import java.sql.SQLOutput;
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in,"utf-8");
+        System.out.println("************************************");
+        System.out.println("****** Celočíslené datové typy ******");
+        System.out.println("************************************");
+        System.out.println("    ");
+        System.out.println("Zadej nějaké číslo:");
+        System.out.println("    ");
+
+
+        System.out.println("Datový typ Byte - 3 místa: ");
+//      Byte dtBajtA =123;
+        Byte dtBajt = Byte.parseByte(sc.nextLine());
+        System.out.println("Zadané číslo Bajt je = : " + dtBajt);
+        System.out.println("  ");
+
+
+        System.out.println("Datový typ Short - 5 míst? ");
+//      Short dtShort = 12345;
+        Short dtShort = Short.parseShort(sc.nextLine());
+        System.out.println("Zadané číslo Short je:" + dtShort);
+        System.out.println("  ");
+
+
+        System.out.println("Datový typ Int: - 10 míst");
+//      int dtInt = 1234567890i;
+        int dtInt = Integer.parseInt(sc.nextLine());
+        System.out.println("Zadané číslo Integer je:" + dtInt);
+        System.out.println("  ");
+
+
+        System.out.println("Datový typ Long - 19 míst");
+//      long dtLong = 1234567890123456789l;
+        long dtLong = Long.parseLong(sc.nextLine());
+        System.out.println("Zadané číslo Long je: " + (long)dtLong);
+
+        System.out.println("************************************");
+        System.out.println("****** Desetíné číslené datové typy ******");
+        System.out.println("************************************");
+        System.out.println("    ");
+
+
+
+// Poznámka:    datové typy Float (7 míst) a Double (16 míst)  umí zobrazit ještě o jedno
+//              číslo více než je uváděno. Ale toto poslední číslo je již zaokrouhlené
+//              z celého dlouhého čísla.
+//
+        System.out.println("Datový typ Float - 7 míst: ");
+//      float dtFloat = 0.1234567f;
+        float dtFloat = Float.parseFloat(sc.nextLine());
+        System.out.println("Zadané číslo Float je: " + (Float)dtFloat);
+        System.out.println("  ");
+
+        System.out.println("Datový typ Double - 16 míst: ");
+        double dtDouble = Double.parseDouble(sc.nextLine());
+        System.out.println("Zadané číslo Double je: " + (Double)dtDouble);
+        System.out.println("  ");
+//      ----------------------------------------------------------------------
+    }
+}
